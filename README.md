@@ -62,8 +62,9 @@ Performance of models on the MasakhaNER downstream task.
 | AfroXLMR-base | 87.7 |
 | AfroXLMR-large | 89.4 |
 | **Monolingual Models** |  |
-| NCHLT TSN RoBERTa | **74.2** |
+| NCHLT TSN RoBERTa | 74.2 |
 | PuoBERTa | **78.2** |
+| PuoBERTa+JW300 | **80.2** |
 
 ## Dataset
 
