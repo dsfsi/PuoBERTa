@@ -1,123 +1,65 @@
-DSFSI Project Starter
-==============================
+---
+license: cc-by-4.0
+datasets:
+- dsfsi/vukuzenzele-monolingual
+- nchlt
+language:
+- tn
+library_name: transformers
+pipeline_tag: fill-mask
+tags:
+- masked langauge model
+- setswana
+---
+# PuoBerta: A curated Setswana Language Model
 
-_This documentation is aimed to help provide information that explains what a project is about._
+A Roberta-based language model specially designed for Setswana, using the new PuoData dataset.
 
-Last updated: August 2023
-
-## Table of contents 
-
-1. [Project Description](#project-description) 
-2. [Project Organization](#project-organization) 
-3. [Getting Started](#getting-started)
-4. [Authors](#authors)
-5. [More Information](#more-information)
-
-## Project Description 
------------
-
-A short description of the project.
-
-## Project Organization
-------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+## Model Details
 
 
---------
+### Model Description
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+This is a masked language model trained on Setswana corpora, making it a valuable tool for a range of downstream applications from translation to content creation. It's powered by the PuoData dataset to ensure accuracy and cultural relevance.
 
-## Getting Started
------------
-_This section provides the necessary information for a user to be able to run the code locally._
+- **Developed by:** Vukosi Marivate ([@vukosi](https://huggingface.co/@vukosi)), Moseli Mots'Oehli ([@MoseliMotsoehli](https://huggingface.co/@MoseliMotsoehli)) , Valencia Wagner, Richard Lastrucci and Isheanesu Dzingirai
+- **Model type:** RoBERTa Model
+- **Language(s) (NLP):** Setswana
+- **License:** CC BY 4.0
 
-### Prerequisites 
 
-Provide a summary of the list software and the version required to run the code. An example of this is : 
+### Usage
 
-- Python 3.11.3 
+Use this model filling in masks or finetune for downstream tasks. Here’s a simple example for masked prediction:
 
-### Installation 
+```python
+from transformers import RobertaTokenizer, RobertaModel
 
-Provide the instructions and code necessary to setup the required software environment for the code. An example of this is : 
-
-1. Run the setup.py to build the src python package
-2. Run the requirements.txt to install all the required libraries, modules, and packages.  
+# Load model and tokenizer
+model = RobertaModel.from_pretrained('dsfsi/PuoBERTa')
+tokenizer = RobertaTokenizer.from_pretrained('dsfsi/PuoBERTa')
 
 ```
+ 
+### Downstream Use 
 
-python setup.py install
-pip install -r requirements.txt 
 
-```
+## Dataset
 
-### Usage 
+We used the PuoData dataset, a rich source of Setswana text, ensuring that our model is well-trained and culturally attuned.\\
 
-Provide information and code on how to run the code and use the code. This includes instructions and examples of inputs and outputs. An example of this is : 
+## Contributing
 
-1. To use the code , run the following line: 
+Your contributions are welcome! Feel free to improve the model.
 
-```
+## Model Card Authors
 
-python src/main.py
+Vukosi Marivate
 
-```
+## Model Card Contact
 
-## Authors 
------------
+For more details, reach out or check our [website](https://dsfsi.github.io/).
 
-* Written by : 
-* Contact details : 
+Email: vukosi.marivate@cs.up.ac.za
 
-### Contributions  
-
-This is optional and provides information about which  and how each of the developers contributed. 
-
-## More Information 
----------
-
-Provide any relevant informations about the project. 
+**Enjoy exploring Setswana through AI!**
