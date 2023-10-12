@@ -33,6 +33,37 @@ tokenizer = RobertaTokenizer.from_pretrained('dsfsi/PuoBERTa')
  
 ### Downstream Use 
 
+## Downstream Performance
+
+### MasakhaPOS
+
+Performance of models on the MasakhaPOS downstream task.
+
+| Model | Test Performance |
+|---|---|
+| **Multilingual Models** |  |
+| AfroLM | 83.8 |
+| AfriBERTa | 82.5 |
+| AfroXLMR-base | 82.7 |
+| AfroXLMR-large | 83.0 |
+| **Monolingual Models** |  |
+| NCHLT TSN RoBERTa | 82.3 |
+| PuoBERTa | **83.4** |
+| PuoBERTa+JW300 | **84.1** |
+
+### MasakhaNER
+
+Performance of models on the MasakhaNER downstream task.
+
+| Model | Test Performance (f1 score) |
+|---|---|
+| **Multilingual Models** |  |
+| AfriBERTa | 83.2 |
+| AfroXLMR-base | 87.7 |
+| AfroXLMR-large | 89.4 |
+| **Monolingual Models** |  |
+| NCHLT TSN RoBERTa | **74.2** |
+| PuoBERTa | **78.2** |
 
 ## Dataset
 
