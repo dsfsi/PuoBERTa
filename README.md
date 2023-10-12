@@ -1,17 +1,7 @@
----
-license: cc-by-4.0
-datasets:
-- dsfsi/vukuzenzele-monolingual
-- nchlt
-language:
-- tn
-library_name: transformers
-pipeline_tag: fill-mask
-tags:
-- masked langauge model
-- setswana
----
+
 # PuoBerta: A curated Setswana Language Model
+
+[![Zenodo doi badge](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8434795-blue.svg)](https://doi.org/10.5281/zenodo.8434795)
 
 A Roberta-based language model specially designed for Setswana, using the new PuoData dataset.
 
