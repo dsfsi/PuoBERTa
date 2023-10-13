@@ -1,4 +1,3 @@
-
 # PuoBerta: A curated Setswana Language Model
 
 [![Zenodo doi badge](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8434795-blue.svg)](https://doi.org/10.5281/zenodo.8434795)
@@ -49,7 +48,7 @@ Performance of models on the MasakhaPOS downstream task.
 | **Monolingual Models** |  |
 | NCHLT TSN RoBERTa | 82.3 |
 | PuoBERTa | **83.4** |
-| PuoBERTa+JW300 | **84.1** |
+| PuoBERTa+JW300 | 84.1 |
 
 ### MasakhaNER
 
@@ -64,11 +63,23 @@ Performance of models on the MasakhaNER downstream task.
 | **Monolingual Models** |  |
 | NCHLT TSN RoBERTa | 74.2 |
 | PuoBERTa | **78.2** |
-| PuoBERTa+JW300 | **80.2** |
+| PuoBERTa+JW300 | 80.2 |
 
 ## Dataset
 
 We used the PuoData dataset, a rich source of Setswana text, ensuring that our model is well-trained and culturally attuned.\\
+
+## Citation Information
+
+Bibtex Refrence
+
+```
+@article{marivatePuoBERTa2023,
+  title={PuoBERTa: Training and evaluation of a curated language model for Setswana},
+  author={Vukosi Marivate and Moseli Mots'Oehli and Valencia Wagner and Richard Lastrucci and Isheanesu Dzingirai},
+  journal={ArXiv},
+}
+```
 
 ## Contributing
 
