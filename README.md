@@ -34,6 +34,10 @@ tokenizer = RobertaTokenizer.from_pretrained('dsfsi/PuoBERTa')
 
 ## Downstream Performance
 
+### Daily News Dikgang
+
+Learn more about the dataset in the [Dataset Folder](daily-news-dikgang)
+
 ### MasakhaPOS
 
 Performance of models on the MasakhaPOS downstream task.
@@ -50,6 +54,8 @@ Performance of models on the MasakhaPOS downstream task.
 | PuoBERTa | **83.4** |
 | PuoBERTa+JW300 | 84.1 |
 
+Downstream POS model 🤗 [https://huggingface.co/dsfsi/PuoBERTa-POS](https://huggingface.co/dsfsi/PuoBERTa-POS)
+
 ### MasakhaNER
 
 Performance of models on the MasakhaNER downstream task.
@@ -65,13 +71,17 @@ Performance of models on the MasakhaNER downstream task.
 | PuoBERTa | **78.2** |
 | PuoBERTa+JW300 | 80.2 |
 
+Downstream NER model 🤗 [https://huggingface.co/dsfsi/PuoBERTa-POS](https://huggingface.co/dsfsi/PuoBERTa-POS)
+
+
+
 ## Dataset
 
 We used the PuoData dataset, a rich source of Setswana text, ensuring that our model is well-trained and culturally attuned.\\
 
 ## Citation Information
 
-Bibtex Refrence
+Bibtex Reference
 
 ```
 @inproceedings{marivate2023puoberta,
