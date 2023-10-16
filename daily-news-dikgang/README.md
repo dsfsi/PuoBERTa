@@ -6,7 +6,7 @@
 
 The dataset contains annotated categorised data from Dikgang - Daily News [https://dailynews.gov.bw/news-list/srccategory/10](https://dailynews.gov.bw/news-list/srccategory/10). The data is in setswana.
 
-See the (Data Statement](DataStatementPuoBERTaDailyNewsDikgang.pdf)
+See the [Data Statement](DataStatementPuoBERTaDailyNewsDikgang.pdf) for foll details.
 
 Disclaimer
 -------
