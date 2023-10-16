@@ -38,6 +38,15 @@ tokenizer = RobertaTokenizer.from_pretrained('dsfsi/PuoBERTa')
 
 Learn more about the dataset in the [Dataset Folder](daily-news-dikgang)
 
+| **Model**                   | **5-fold Cross Validation F1**       | **Test F1**       |
+|-----------------------------|--------------------------------------|-------------------|
+| Logistic Regression + TFIDF | 60.1                                 | 56.2              |
+| NCHLT TSN RoBERTa           | 64.7                                 | 60.3              |
+| PuoBERTa                    | **63.8**                             | **62.9**          |
+| PuoBERTaJW300               | 66.2                                 | 65.4              |
+
+Downstream News Categorisation model 🤗 [https://huggingface.co/dsfsi/PuoBERTa-News](https://huggingface.co/dsfsi/PuoBERTa-News)
+
 ### MasakhaPOS
 
 Performance of models on the MasakhaPOS downstream task.
@@ -71,13 +80,13 @@ Performance of models on the MasakhaNER downstream task.
 | PuoBERTa | **78.2** |
 | PuoBERTa+JW300 | 80.2 |
 
-Downstream NER model 🤗 [https://huggingface.co/dsfsi/PuoBERTa-POS](https://huggingface.co/dsfsi/PuoBERTa-POS)
+Downstream NER model 🤗 [https://huggingface.co/dsfsi/PuoBERTa-NER](https://huggingface.co/dsfsi/PuoBERTa-NER)
 
+## Pre-Training Dataset
 
+We used the PuoData dataset, a rich source of Setswana text, ensuring that our model is well-trained and culturally attuned.
 
-## Dataset
-
-We used the PuoData dataset, a rich source of Setswana text, ensuring that our model is well-trained and culturally attuned.\\
+[Github](https://github.com/dsfsi/PuoData), 🤗 [https://huggingface.co/datasets/dsfsi/PuoData](https://huggingface.co/datasets/dsfsi/PuoData)
 
 ## Citation Information
 
