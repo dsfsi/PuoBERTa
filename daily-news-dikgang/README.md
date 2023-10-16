@@ -1,12 +1,12 @@
 # Daily News Dikgang
-Github:
-Zenodo: 
-Arxiv Preprint:
+
+[![arXiv](https://img.shields.io/badge/arXiv-2310.09141-b31b1b.svg)](https://arxiv.org/abs/2310.09141) 
 
 ## About dataset
 
 The dataset contains annotated categorised data from Dikgang - Daily News [https://dailynews.gov.bw/news-list/srccategory/10](https://dailynews.gov.bw/news-list/srccategory/10). The data is in setswana.
 
+See the (Data Statement](DataStatementPuoBERTaDailyNewsDikgang.pdf)
 
 Disclaimer
 -------
@@ -15,9 +15,26 @@ This dataset contains machine-readable data extracted from online news articles,
 Authors
 -------
 - Vukosi Marivate - [@vukosi](https://twitter.com/vukosi)
+- Valencia Wagner 
 
 Citation
 --------
+
+Bibtex Reference
+
+```
+@inproceedings{marivate2023puoberta,
+  title   = {PuoBERTa: Training and evaluation of a curated language model for Setswana},
+  author  = {Vukosi Marivate and Moseli Mots'Oehli and Valencia Wagner and Richard Lastrucci and Isheanesu Dzingirai},
+  year    = {2023},
+  booktitle= {SACAIR 2023 (To Appear)},
+  keywords = {NLP},
+  preprint_url = {https://arxiv.org/abs/2310.09141},
+  dataset_url = {https://github.com/dsfsi/PuoBERTa},
+  software_url = {https://huggingface.co/dsfsi/PuoBERTa}
+}
+```
+
 
 Licences
 -------
