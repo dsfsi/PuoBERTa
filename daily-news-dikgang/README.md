@@ -7,7 +7,6 @@ Arxiv Preprint:
 
 The dataset contains annotated categorised data from Dikgang - Daily News [https://dailynews.gov.bw/news-list/srccategory/10](https://dailynews.gov.bw/news-list/srccategory/10). The data is in setswana.
 
-The datasets contain government magazine editions in 11 l
 
 Disclaimer
 -------
