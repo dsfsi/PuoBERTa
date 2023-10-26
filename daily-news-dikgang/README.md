@@ -2,6 +2,8 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2310.09141-b31b1b.svg)](https://arxiv.org/abs/2310.09141) 
 
+Give Feedback 📑: [DSFSI Resource Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSf7S36dyAUPx2egmXbFpnTBuzoRulhL5Elu-N1eoMhaO7v10w/formResponse){:target="_blank"}
+
 ## About dataset
 
 The dataset contains annotated categorised data from Dikgang - Daily News [https://dailynews.gov.bw/news-list/srccategory/10](https://dailynews.gov.bw/news-list/srccategory/10). The data is in setswana.
