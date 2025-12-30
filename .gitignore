@@ -87,3 +87,28 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+# Claude Code
+.claude/
+
+# Model training outputs
+results/
+runs/
+checkpoints/
+logs/
+wandb/
+
+# HuggingFace cache
+.cache/
+transformers_cache/
+
+# Model files (if downloaded locally)
+*.bin
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# Temporary files
+*.tmp
+*~
